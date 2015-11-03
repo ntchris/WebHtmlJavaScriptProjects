@@ -1,0 +1,86 @@
+cd C:\Program Files (x86)\Research In Motion\BlackBerry WebWorks SDK for TabletOS 2.2.0.5\bbwp\
+
+
+
+192.168.228.131
+
+
+
+cd C:\Program Files (x86)\Research In Motion\BlackBerry WebWorks SDK for TabletOS 2.2.0.5\bbwp\
+  bbwp "D:\Source\ScoreBoard\pkg\pkg.zip"  -o "d:\source\ScoreBoard\build\"
+  rem  ( x86 java_home)
+      
+  
+VM
+  cd C:\Program Files (x86)\RIM\BBBWebWorksSDKforTabletOS2.0.0.4\bbwp\bbwp\blackberry-tablet-sdk\bin
+  blackberry-deploy  -installApp -password  playbook -device  192.168.228.131  -package F:\source\PBChChess2011\PBChChessPkg.bar
+
+
+
+Must use x86 Java_Home!!
+
+C:\Program Files (x86)\Java\jdk1.6.0_26
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+f:
+cd "F:\source\PBChChess2011\support"
+
+ ZIP 
+  
+   f:
+   cd "F:\source\PBChChess2011\PBChChessPkg\"
+   del PBChChessPkg.zip
+   "C:\Program Files\7-Zip\7z" a  -tzip -r   -x!.zip -x!.svn -x!.settings -x!.project -x!*.psd -x!*.txt  PBChChessPkg.zip
+
+   c: 
+   cd C:\Program Files (x86)\RIM\BBBWebWorksSDKforTabletOS2.0.0.4\bbwp\bbwp
+   bbwp "F:\source\PBChChess2011\PBChChessPkg\PBChChessPkg.zip"  -o "F:\source\PBChChess2011"   
+  
+   cd C:\Program Files (x86)\RIM\BBBWebWorksSDKforTabletOS2.0.0.4\bbwp\bbwp\blackberry-tablet-sdk\bin
+   blackberry-deploy  -installApp -password  playbook -device  192.168.228.131  -package F:\source\PBChChess2011\PBChChessPkg.bar
+
+
+Real:
+
+   cd C:\Program Files (x86)\Research In Motion\BlackBerry WebWorks SDK for TabletOS 2.2.0.5\bbwp\blackberry-tablet-sdk\bin
+   blackberry-deploy  -installApp -password  pass -device  169.254.0.1  -package D:\Source\ScoreBoard\build\pkg.bar -devmode
+   
+ 
+
+
+
+----------
+old
+
+ #FFFFFF
+
+#000000
+
+
+
+new ver
+
+
+   
+   d:
+   cd "d:\source\PBChChess2011\PBChChessPkg\"
+   del PBChChessPkg.zip
+   "C:\Program Files\7-Zip\7z" a  -tzip -r   -x!.zip -x!.svn -x!.settings -x!.project -x!*.psd -x!*.txt  PBChChessPkg.zip
+
+   d:
+   cd d:\source\PBChChess2011\Support
+      
+   
+   "C:\Program Files\Research In Motion\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\bbwp\bbwp" "d:\source\PBChChess2011\PBChChessPkg\PBChChessPkg.zip"  -o "d:\source\PBChChess2011"   
+
+
+   
+   "C:\Program Files\Research In Motion\BlackBerry WebWorks SDK for TabletOS 2.1.0.6\bbwp\blackberry-tablet-sdk\bin\blackberry-deploy"  -installApp -password  xddx -device  10.251.222.32  -package d:\source\PBChChess2011\PBChChessPkg.bar -devmode
+ 
+   
+   
+   
+
+   

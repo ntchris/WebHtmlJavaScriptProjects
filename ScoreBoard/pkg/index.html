@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!--  <meta name="viewport" content="width=device-height, initial-scale=0.6, minimum-scale=0.6, maximum-scale=1.0, user-scalable=no">
+        -->
+
+            
+      <style type="text/css">
+         body 
+         {
+	        padding: ;
+	        margin: 3;
+	        background-color: white;
+	        color: black;
+	        position: fixed;	 
+        }
+</style>
+
+
+</head>
+
+
+
+<body onload="initPage()"  >
+
+ 
+
+<div id="AppContainer" style="height: 500px; width: 1000px; ">
+
+   <div id="mainContentBox"  style=" height: 480px;   border: 1px solid gray; padding:1;">
+
+     
+       <script>   
+          //document.write(getPlayerHTMLText("1"));
+
+       </script>
+       
+       <!-- player1 box , has name, big score, current game score  
+       <div id="player1box" style="float: left; height: 480px; width: 420px;text-align: center;" >
+
+           <div id="Player1Name box" style="height: 60px; float:top; padding: 10; font-size:45px; background-color: LightSkyBlue" >
+
+              <input type="text" name="player1Name"  style="margin: 3; font-size:25px; text-align: center; margin: 0 auto;" value="player1"></input> 
+           </div>
+           
+           <div id="player1RoundScoreBox" style =" background-color: LightSkyBlue">
+               <label id="player1RoundScoreLabel" style="padding: 3; font-size:50px">not init1</label>
+           </div>
+          
+            <div id="player1CurrentScoreBox"   style ="border: 6px solid LightSkyBlue; padding:5;" >
+                  <label  id="player1CurrentScoreLabel" style=" font-size:243px" onClick="scoreClick(this)" >not init2</label>
+            </div>  
+             
+          <div id="player1ServingBox" style="height: 60px; float : bottom; background-color: YellowGreen ; font-size:35px" >   *  </div>     
+          
+
+
+       </div>  <!-- end of  playerLeftbox -->
+       
+       
+        
+       <!-- on right player box , has name, big score, current game score -->   
+        
+        <!--
+        <div id="player2box" style="float: right; height: 480px; width: 420px;text-align: center;" >
+
+           <div id="player2Namebox" style="height: 60px; float:top; padding: 10; font-size:45px; background-color: MistyRose " >
+
+              <input type="text" name="player1Name"  style="margin: 3; font-size:25px; text-align: center; margin: 0 auto;" value="player2"></input> 
+           </div>
+           
+           <div id="player2RoundScoreBox" style =" background-color: MistyRose ">
+               <label id="player2RoundScoreLabel" style="padding: 3; font-size:50px">not init3</label>
+           </div>
+          
+           <div id="player2CurrentScoreBox"   style ="border: 6px solid MistyRose; padding:5;">
+               <label  id="player2CurrentScoreLabel" style=" font-size:243px" onClick="scoreClick(this)" >init4</label>
+           </div>
+          
+           <div id="player2ServingBox" style="height: 60px; float : bottom; background-color: YellowGreen ; font-size:35px" >   *  </div>
+       
+           
+
+        </div>  <!--end of right player box -->
+        
+        <script>
+          // document.write(getPlayerHTMLText("2"));   
+
+         //  document.write(getVSHTMLText());
+       
+        </script>
+        
+       <!--
+        <div id="VS" style="height: 480px; width: 100px ; text-align: center; margin: 0 auto;"> 
+              <label style="position:relative; left: 2px; top:200px ;font-size:60px "> V.S. </label> 
+        </div>
+       -->
+           
+           
+    </div> <!-- end of main content box-->
+   
+   <div  id="otherInfo"  style="height: 60px;  padding: 1; background-color: DarkOrange ;font-size:33px">
+     
+       <div id="timer" style="float: left;  padding: 3">Time : <label id="GameTimer">00:00</label>  
+       </div>
+       
+       <div id="controls" > 
+           <button id="startButton" style="float: left;padding: 3 ; margin: 3; font-size:28px"; onclick="startButtonOnClick(this)"> Start </button>
+           <button id="resetButton" style="float: left;padding: 3 ; margin: 3; font-size:28px"; onclick="resetButtonOnClick()"> Reset</button>
+           <button id="switchServingtButton" style="float: left;padding: 3 ; margin: 3; font-size:28px"; onclick="switchServingButtonOnClick()"> switch serving</button>
+           <button id="switchSideButton" style="float: left;padding: 3 ; margin: 3; font-size:28px"; onclick="switchsideButtonOnClick()"> switch sides</button>
+       
+       </div>
+       
+       
+       
+   </div> <!-- end of otherInfo-->
+   
+</div>  <!-- AppContainer -->
+
+ 
+   
+
+
+<script src="script/scoreboard.js" type="text/javascript"></script>
+
+</body>
+</html>
